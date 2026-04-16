@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Lucas Hentz-Lanfranchi</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <nav class="nav">
+      <a class="brand" href="#top">MMI</a>
+
+      <ul class="nav-links">
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#projets">Projet</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-icons" aria-label="Réseaux">
+        <a class="icon-link" href="https://www.instagram.com/" aria-label="Instagram" target="_blank" rel="noopener">
+          <img src="img/Instagram_icon.png" alt="Instagram" />
+        </a>
+
+        <a class="icon-link" href="https://www.facebook.com/lucas.hentzlanfranchi" aria-label="Facebook" target="_blank" rel="noopener">
+          <img src="img/Facebook_Logo.png" alt="Facebook" />
+        </a>
+
+        <a class="icon-link" href="https://www.tiktok.com/fr/" aria-label="TikTok" target="_blank" rel="noopener">
+          <img src="img/icone-application-tiktok.avif" alt="TikTok" />
+        </a>
+      </div>
+
+      <!-- BURGER MOBILE -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+
+      <label for="menu-toggle" class="hamburger" aria-label="Ouvrir le menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <!-- MENU MOBILE  -->
+      <div class="mobile-menu" aria-label="Menu mobile">
+        <div class="mobile-menu-head">
+          <span class="mobile-title">Menu</span>
+          <label for="menu-toggle" class="mobile-close" aria-label="Fermer">✕</label>
+        </div>
+
+        <a href="#accueil">Accueil</a>
+        <a href="#projets">Projet</a>
+        <a href="#competences">Compétences</a>
+        <a href="#contact">Contact</a>
+
+        <div class="mobile-social" aria-label="Réseaux mobile">
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+            <img src="img/Instagram_icon.png" alt="Instagram" />
+          </a>
+          <a href="https://www.facebook.com/lucas.hentzlanfranchi" target="_blank" rel="noopener" aria-label="Facebook">
+            <img src="img/Facebook_Logo.png" alt="Facebook" />
+          </a>
+          <a href="https://www.tiktok.com/fr/" target="_blank" rel="noopener" aria-label="TikTok">
+            <img src="img/icone-application-tiktok.avif" alt="TikTok" />
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section id="accueil" class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <h1 class="hero-title">
+            Je m'appelle Lucas<br />
+            Hentz-Lanfranchi <br />
+            Je suis etudiant en<br />
+            MMI
+          </h1>
+
+          <div class="hero-actions">
+            <a class="btn btn-dark btn-anim" href="#competences">
+  Mes compétences <span class="dot">●</span></a>         
+  <a class="btn btn-light btn-contact-anim" href="#contact">Contactez-moi <span class="dot">●</span></a>
+          </div>
+        </div>
+
+        <div class="photo-frame">
+          <img src="img/images portfolio.png" alt="Photo de Lucas" />
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJETS -->
+<section id="projets" class="section dark">
+  <div class="wrap">
+    <h2 class="section-title">Mes Projets récents</h2>
+
+    <!-- LISTE DES PROJETS -->
+    <div class="projects-list">
+
+      <a class="card project project-link" href="#modal-p1">
+        <div class="project-text">
+          <h3>Affiche parfum</h3>
+          <p>Affiche premium sombre et élégante voir plus…</p>
+        </div>
+        <div class="project-media">
+          <span class="tag">Black Séries</span>
+          <img src="img/Hentz-Lanfranchi_Lucas_2.jpg" alt="Affiche parfum Black Séries" />
+        </div>
+      </a>
+
+      <a class="card project project-link" href="#modal-p2">
+        <div class="project-text">
+          <h3>LOGO CGW</h3>
+          <p>Logo futuriste et rétro CGW voir plus…</p>
+        </div>
+        <div class="project-media">
+          <img src="img/Capture d'écran 2025-12-23 162016.png" alt="Logo CGW" />
+        </div>
+      </a>
+
+      <a class="card project project-link" href="#modal-p3">
+        <div class="project-text">
+          <h3>Affiche théâtre Dracula</h3>
+          <p> afiiche pour aller voir Dracula voir plus…</p>
+        </div>
+        <div class="project-media">
+          <img src="img/affiche dracula.jpg" alt="Affiche Dracula" />
+        </div>
+      </a>
+
+      <a class="card project project-link" href="#modal-p4">
+        <div class="project-text">
+          <h3>Mini Chat</h3>
+          <p>Interface de Mini-chat voir plus…</p>
+        </div>
+        <div class="project-media">
+          <img src="img/Mini Chat.png" alt="Mini Chat" />
+        </div>
+      </a>
+
+      <a class="card project project-link" href="#modal-p5">
+        <div class="project-text">
+          <h3>Affiche Jazz festival</h3>
+          <p>Affiche festive de jazz voir plus…</p>
+        </div>
+        <div class="project-media">
+          <img src="img/affiche jaz festival.jpg" alt="Affiche Jazz festival" />
+        </div>
+      </a>
+
+    </div>
+
+    <!-- ===== MODALES (POPUP) ===== -->
+
+    <!-- MODAL 1 -->
+    <div id="modal-p1" class="modal">
+      <a href="#projets" class="modal-overlay" aria-label="Fermer"></a>
+
+      <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="t-p1">
+        <a href="#projets" class="modal-close" aria-label="Fermer">✕</a>
+
+        <h3 id="t-p1" class="modal-title">Affiche parfum</h3>
+
+        <div class="modal-body">
+          <div class="modal-media">
+            <img src="img/Hentz-Lanfranchi_Lucas_2.jpg" alt="Affiche parfum Black Séries" />
+          </div>
+          <div class="modal-text">
+            <p>
+         Cette affiche présente un parfum nommé Black Séries, associé à l'élégance et au luxe.
+Le fond sombre met en valeur le flacon et crée une ambiance mystérieuse et raffinée.
+Le flacon noir, au centre de l'image, attire immédiatement le regard du spectateur.
+Le bouchon doré apporte une touche de sophistication et de prestige.
+La fumée autour du parfum donne un effet de mouvement et de mystère.
+La typographie dorée renforce l'image haut de gamme du produit.
+Le contraste entre le noir et l'or rappelle les codes du luxe dans la publicité.
+Le slogan « L'élégance à l'état pur » souligne le positionnement premium du parfum.
+L'affiche cherche à séduire le consommateur par une atmosphère chic et intense.
+Elle donne l'impression d'un parfum puissant, élégant et sophistiqué. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL 2 -->
+    <div id="modal-p2" class="modal">
+      <a href="#projets" class="modal-overlay" aria-label="Fermer"></a>
+
+      <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="t-p2">
+        <a href="#projets" class="modal-close" aria-label="Fermer">✕</a>
+
+        <h3 id="t-p2" class="modal-title">LOGO CGW</h3>
+
+        <div class="modal-body">
+          <div class="modal-media">
+            <img src="img/Capture d'écran 2025-12-23 162016.png" alt="Logo CGW" />
+          </div>
+          <div class="modal-text">
+            <p>
+
+  Ce logo représente l'événement Corsica Games Week 2026, dédié à l'univers du jeu vidéo.
+  La forme circulaire rappelle un badge ou un emblème, renforçant l'identité de l'événement.
+  Le fond noir étoilé évoque l'espace et les mondes virtuels des jeux de science-fiction.
+  Les lettres CGW sont grandes, colorées et anguleuses, ce qui donne un style dynamique.
+  Les couleurs violet et bleu apportent un contraste fort avec le fond sombre.
+  Le texte en arc de cercle « Corsica Games Week » encadre le logo et attire le regard.
+  Le style graphique rappelle les jeux rétro et l'esthétique arcade.
+  Un petit vaisseau spatial en bas du cercle renforce le thème du gaming.
+  L'ensemble transmet une ambiance futuriste, ludique et immersive.
+  Ce logo identifie clairement un événement moderne et attractif pour les passionnés de jeux vidéo.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL 3 -->
+    <div id="modal-p3" class="modal">
+      <a href="#projets" class="modal-overlay" aria-label="Fermer"></a>
+
+      <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="t-p3">
+        <a href="#projets" class="modal-close" aria-label="Fermer">✕</a>
+
+        <h3 id="t-p3" class="modal-title">Affiche théâtre Dracula</h3>
+
+        <div class="modal-body">
+          <div class="modal-media">
+            <img src="img/affiche dracula.jpg" alt="Affiche Dracula" />
+          </div>
+          <div class="modal-text">
+            <p>Cette affiche de théâtre met en avant la pièce Dracula dans une ambiance sombre, mystérieuse et angoissante.
+Les couleurs dominantes, principalement le rouge et le noir, rappellent le sang, la nuit et le danger.
+Le rouge peut aussi symboliser la passion et la violence liées au personnage de Dracula.
+La composition centrale attire immédiatement le regard vers le cœur de l'image.
+La typographie du titre est forte et marquée, ce qui donne un aspect dramatique à l'affiche.
+Elle évoque un univers gothique, proche des histoires d'horreur classiques.
+Les contrastes entre les zones sombres et lumineuses renforcent l'atmosphère inquiétante.
+On ressent une impression de tension, comme si quelque chose de menaçant allait se produire.
+L'affiche cherche à intriguer le spectateur et à susciter la curiosité.
+Elle donne envie d'assister à la pièce pour découvrir cette histoire célèbre et terrifiante.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL 4 -->
+    <div id="modal-p4" class="modal">
+      <a href="#projets" class="modal-overlay" aria-label="Fermer"></a>
+
+      <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="t-p4">
+        <a href="#projets" class="modal-close" aria-label="Fermer">✕</a>
+
+        <h3 id="t-p4" class="modal-title">Mini Chat</h3>
+
+        <div class="modal-body">
+          <div class="modal-media">
+            <img src="img/Mini Chat.png" alt="Mini Chat" />
+          </div>
+          <div class="modal-text">
+            <p>Ce projet de mini chat est une application web permettant aux utilisateurs d'échanger des messages simplement.
+L'interface est claire et organisée, ce qui facilite la lecture des conversations.
+Chaque message affiche le pseudo de l'utilisateur, son avatar et l'heure d'envoi.
+L'utilisateur peut personnaliser son profil en choisissant un pseudo, une image et une couleur de texte.
+Les messages apparaissent dans l'ordre chronologique, comme dans une vraie messagerie.
+Le bouton « Envoyer » permet de publier rapidement un message dans le chat.
+Ce projet montre la gestion des formulaires et l'affichage dynamique des données.
+Il permet aussi de comprendre le fonctionnement de l'interaction entre l'utilisateur et la page web.
+Le design simple met l'accent sur la fonctionnalité plutôt que sur la complexité graphique.
+C'est un bon exemple de projet pour apprendre les bases du développement web interactif.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL 5 -->
+    <div id="modal-p5" class="modal">
+      <a href="#projets" class="modal-overlay" aria-label="Fermer"></a>
+
+      <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="t-p5">
+        <a href="#projets" class="modal-close" aria-label="Fermer">✕</a>
+
+        <h3 id="t-p5" class="modal-title">Affiche Jazz festival</h3>
+
+        <div class="modal-body">
+          <div class="modal-media">
+            <img src="img/affiche jaz festival.jpg" alt="Affiche Jazz festival" />
+          </div>
+          <div class="modal-text">
+            <p>Cette affiche annonce un festival de jazz dans une ambiance chaleureuse et festive.
+Le saxophone, placé au centre, est l'élément principal et représente l'instrument emblématique du jazz.
+Les couleurs chaudes comme le jaune, l'orange et le rouge créent une atmosphère conviviale et dynamique.
+Les notes de musique autour du saxophone donnent une impression de mouvement et de rythme.
+Le titre « Jazz Festival » est écrit avec une typographie stylisée qui rappelle l'énergie de la musique.
+Les informations pratiques, comme le lieu, la date et les horaires, sont clairement visibles.
+Cela permet au public de comprendre rapidement quand et où se déroule l'événement.
+L'affiche donne une impression de fête, de partage et de bonne humeur.
+Elle attire l'attention des passants grâce à ses couleurs vives et son illustration expressive.
+Elle donne envie de participer au festival et de profiter des concerts proposés.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- COMPETENCES -->
+    <section id="competences" class="section light">
+      <div class="wrap">
+        <h2 class="section-title dark-title">Mes Competences</h2>
+
+        <div class="skills">
+          <div class="skill">
+            <div class="skill-ico">
+              <img src="img/Adobe_Photoshop_CC_icon.svg.png" alt="Photoshop" />
+            </div>
+            <div class="bar"><span style="width:50%"></span></div>
+            <div class="pct">50 %</div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-ico">
+              <img src="img/Adobe_Illustrator_CC_icon.svg.png" alt="Illustrator" />
+            </div>
+            <div class="bar"><span style="width:70%"></span></div>
+            <div class="pct">70 %</div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-ico">
+              <img src="img/Visual_Studio_Code_1.35_icon.svg.png" alt="VS Code" />
+            </div>
+            <div class="bar"><span style="width:75%"></span></div>
+            <div class="pct">75 %</div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-ico">
+              <img src="img/images figma.png" alt="Figma" />
+            </div>
+            <div class="bar"><span style="width:40%"></span></div>
+            <div class="pct">40 %</div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-ico">
+              <img src="img/HTML.png" alt="HTML" />
+            </div>
+            <div class="bar"><span style="width:60%"></span></div>
+            <div class="pct">60 %</div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-ico">
+              <img src="img/CSS.webp" alt="CSS" />
+            </div>
+            <div class="bar"><span style="width:45%"></span></div>
+            <div class="pct">45 %</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section dark">
+      <div class="wrap">
+        <div class="contact card">
+          <h2 class="contact-title">Contactez-moi</h2>
+
+          <form class="form" action="#" method="post">
+            <div class="grid2">
+              <input type="text" name="nom" placeholder="Nom" />
+              <input type="text" name="prenom" placeholder="Prenom" />
+            </div>
+
+            <div class="grid2">
+              <input type="text" name="objet" placeholder="objet" />
+              <input type="email" name="email" placeholder="Email" />
+            </div>
+
+            <textarea name="message" rows="6" placeholder="message"></textarea>
+
+            <button class="btn btn-dark" type="submit">envoyer Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer dark">
+      <div class="wrap">© 2026 - Lucas</div>
+    </footer>
+  </main>
+</body>
+</html>
